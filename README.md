@@ -1,4 +1,6 @@
-# IHP React Starter
+# IHP Backend Chat Example App
+
+[You can find this app running here.](https://ihp-backend-chat-example-app.vercel.app/)
 
 ## Usage
 
@@ -21,19 +23,6 @@ After this you can start the web server and esbuild watcher:
 npm run dev
 ```
 
-## Type Checking
+## Schema
 
-The application server will not display type errors by default. For that you need to start a second process:
-
-```bash
-npm run typecheck
-```
-
-Before the first type check, open the Project Settings and install the provided TypeScript type declaration for your project.
-
-## Bundling for Production
-
-```bash
-export BACKEND_URL="https://REPLACE ME.di1337.com"
-npm run build
-```
+If you want to import this frontend into your own IHP Backend, copy the contents of Schema.sql into your project.
