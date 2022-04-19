@@ -35,7 +35,7 @@ interface MessagesContainerProps {
     channelId: UUID
 }
 function MessagesContainer({ channelId }: MessagesContainerProps) {
-    const messages = useQuery(query('messages').filterWhere('channelId', channelId).orderBy('createdAt'));
+    const messages = useQuery(query('messages').filterWhere('channelId', channelId).orderByDesc('createdAt'));
     const isLoggedIn = useIsLoggedIn();
 
     return <div>
