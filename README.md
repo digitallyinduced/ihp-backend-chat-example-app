@@ -14,7 +14,7 @@ Set the `BACKEND_URL` in `.env` to your project's url:
 
 ```bash
 # .env
-BACKEND_URL=https://REPLACE ME.di1337.com
+BACKEND_URL=https://REPLACE ME.ihpbackend.app
 ```
 
 After this you can start the web server and esbuild watcher:
