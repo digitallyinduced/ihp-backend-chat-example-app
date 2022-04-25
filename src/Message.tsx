@@ -1,7 +1,7 @@
 import React, { useCallback } from 'react';
 
-import { query, updateRecord, deleteRecord, Message } from 'ihp-backend';
-import { useQuerySingleResult } from 'ihp-backend/react';
+import { query, updateRecord, deleteRecord, Message } from 'thin-backend';
+import { useQuerySingleResult } from 'thin-backend/react';
 
 interface MessageProps {
     message: Message

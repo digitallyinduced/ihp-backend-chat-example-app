@@ -1,6 +1,6 @@
 import React, { useEffect, useCallback } from 'react';
-import { query, createRecord, logout, Channel, UUID } from 'ihp-backend';
-import { useQuery, useCurrentUser } from 'ihp-backend/react';
+import { query, createRecord, logout, Channel, UUID } from 'thin-backend';
+import { useQuery, useCurrentUser } from 'thin-backend/react';
 
 interface SidebarProps {
     channelId: UUID | null,

@@ -1,7 +1,7 @@
 import React, { useState, useCallback } from 'react';
 
-import { query, createRecord, UUID, loginWithRedirect } from 'ihp-backend';
-import { useQuerySingleResult } from 'ihp-backend/react';
+import { query, createRecord, UUID, loginWithRedirect } from 'thin-backend';
+import { useQuerySingleResult } from 'thin-backend/react';
 
 
 interface NewMessageFormProps {

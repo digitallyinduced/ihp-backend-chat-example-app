@@ -1,8 +1,8 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import * as ReactDOM from 'react-dom'
 
-import { query, initIHPBackend, UUID } from 'ihp-backend';
-import { useQuery, IHPBackend, useIsLoggedIn } from 'ihp-backend/react';
+import { query, initThinBackend, UUID } from 'thin-backend';
+import { useQuery, ThinBackend, useIsLoggedIn } from 'thin-backend/react';
 
 import Sidebar from './Sidebar';
 import Message from './Message';
@@ -12,7 +12,7 @@ function App() {
     // This var keeps track of the currently selected channel
     const [channelId, setChannelId] = useState<UUID | null>(null);
 
-    return <IHPBackend requireLogin={false}>
+    return <ThinBackend requireLogin={false}>
         <div className="container-fluid">
             <div className="row">
                 <div className="col-3 bg-light pt-4">
@@ -28,7 +28,7 @@ function App() {
                 </div>
             </div>
         </div>
-    </IHPBackend>
+    </ThinBackend>
 }
 
 interface MessagesContainerProps {
@@ -51,7 +51,7 @@ function MessagesContainer({ channelId }: MessagesContainerProps) {
 }
 
 // This needs to be run before any calls to `query`, `createRecord`, etc.
-initIHPBackend({ host: process.env.BACKEND_URL });
+initThinBackend({ host: process.env.BACKEND_URL });
 
 // Start the React app
 ReactDOM.render(<App/>, document.getElementById('app'));
